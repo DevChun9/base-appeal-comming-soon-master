@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p, .span__h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.span__h1 {
+    font-weight: 300;
+}
+
+.main__txt h1 {
+    font-weight: 400;
+}
+
+.main__logo {
+    padding: 2rem 7rem;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg-pattern-desktop.svg);
+}
+
+.main__1, h1, p {
+    width: 80%;
+}
+
+.span__h1,
+.main__1 p {
+    color: hsl(0, 36%, 70%);
+}
+
+.main__1 {
+    width: 70%;
+}
+
+.main__1__p {
+    padding: 2rem 7rem;
+}
+
+.main__2 {
+    width: 50%;
+}
+
+.main__2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.img__mobile {
+    display: none;
+}
+
+.email input {
+    padding: 0.75rem 5rem;
+    border-radius: 50px;
+    outline: 1px solid hsl(0, 36%, 70%) ;
+}
+
+.email button {
+    display: inline;
+    padding: 1.15rem 2.5rem;
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 50px;
+    position: relative;
+    right: 60px;
+    top: 1px;
+}
+
+@media (max-width: 600px) {
+
+    #main {
+        height: 120vh;
+    }
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main__1 h1,
+    .main__1__p,
+    .main__txt {
+        text-align: center;
+    }
+
+    .main__logo {
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .main__1 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main__1 h1 {
+        font-size: 2rem;
+    }
+
+    .main__1 p {
+        font-size: 1rem;
+    }
+
+    .main__1, h1, p {
+        width: 100%;
+    }
+
+    .main__2{
+        width: 100%;
+    }
+
+    .email input {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .email button {
+        padding: 0.7rem 1.5rem;
+        position: relative;
+        top: 4px;
+    }
+
+    .main__2 img {
+        display: none;
+    }
+
+    .img__mobile {
+        display: block;
+        padding: none;
+        width: 100%;
+    }
+
+    .main__1__p {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width:1150px) {
+    .main__1 {
+        width: 60%;
+    }
+
+    .main__1 h1 {
+        font-size: 3rem;
+    }
+
+    .main__2 {
+        width: 40%;
+        height: auto;
+    }
+
+    .main__1__p {
+        padding: 2rem;
+    }
+
+    .main__logo {
+        padding: 2rem;
+    }
+
+    .email input {
+        padding: 0.75rem 2rem;
+    }
+}
